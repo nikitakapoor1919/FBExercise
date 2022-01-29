@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FB Demo</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-content">
+            <p>Join Facebook</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>What's your Date Of Birth?</h1>
+        <p>Chooose your date of birth. You can always make this private later.</p>
+        <div class="content">
+            <div id='error'></div>
+            <h4 style="text-align: left;">Date of Birth</h4>
+            <div class="dob">
+                <div>
+                    <label for="d"></label>
+                    <select id="d" name="date">
+                        <option value=""></option>
+                      </select>
+                </div>
+                <div>
+                    <label for="month"></label>
+                    <select id="month" name="date">
+                        <option value=""></option>     
+                      </select>
+                </div>
+                <div>
+                    <label for="year" name="date"></label>
+                    <select id="year">
+                        <option value=""></option>       
+                    </select>
+                </div>
+            </div>
+            <button id="next">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
