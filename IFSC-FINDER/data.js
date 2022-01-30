@@ -117,7 +117,7 @@ function setResult() {
     if (bankState.result[0] != null) {
         document.getElementById("box1").style.display = "none";
         document.getElementById("box2").style.display = "block";
-        document.getElementById('bank-name-display').innerHTML = 'IFSC CODE FOR' + bankState.result[0].BANK
+        document.getElementById('bank-name-display').innerHTML = 'IFSC CODE FOR ' + bankState.result[0].BANK
         document.getElementById('state-district-display').innerHTML = bankState.result[0].STATE + '-' + bankState.result[0].DISTRICT
         document.getElementById('ifsc').innerHTML = bankState.result[0].IFSC
         document.getElementById('address').innerHTML = bankState.result[0].ADDRESS
