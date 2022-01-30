@@ -132,6 +132,11 @@ function setResult() {
 
 }
 
+function goBack() {
+    document.getElementById("box1").style.display = "block";
+    document.getElementById("box2").style.display = "none";
+}
+
 async function downloadData() {
     const res = await fetch("ifsc.json")
     window.ifscData = await res.json();
@@ -141,6 +146,7 @@ async function downloadData() {
     document.getElementById('district').onchange = handleDistrictChange;
     document.getElementById('branch').onchange = handleBranchChange;
     document.getElementById('next').onclick = setResult
+    document.getElementById('back').onclick = goBack
 }
 
 
