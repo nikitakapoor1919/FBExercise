@@ -29,6 +29,15 @@ label {
     border-radius: 5px;
 }
 
+#back {
+    margin-top: 30px;
+    background-color: #ed193b;
+    color: white;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+}
+
 .container {
     position: relative;
     top: 100px;
