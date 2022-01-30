@@ -119,13 +119,13 @@ function setResult() {
         document.getElementById("box2").style.display = "block";
         document.getElementById('bank-name-display').innerHTML = 'IFSC CODE FOR' + bankState.result[0].BANK
         document.getElementById('state-district-display').innerHTML = bankState.result[0].STATE + '-' + bankState.result[0].DISTRICT
-        document.getElementById('ifsc').value = bankState.result[0].IFSC
-        document.getElementById('address').value = bankState.result[0].ADDRESS
-        document.getElementById('phone').value = bankState.result[0].CONTACT
-        document.getElementById('district-name').value = bankState.result[0].DISTRICT
-        document.getElementById('state-name').value = bankState.result[0].STATE
-        document.getElementById('bank-name').value = bankState.result[0].BANK
-        document.getElementById('branch-name').value = bankState.result[0].BRANCH
+        document.getElementById('ifsc').innerHTML = bankState.result[0].IFSC
+        document.getElementById('address').innerHTML = bankState.result[0].ADDRESS
+        document.getElementById('phone').innerHTML = bankState.result[0].CONTACT
+        document.getElementById('district-name').innerHTML = bankState.result[0].DISTRICT
+        document.getElementById('state-name').innerHTML = bankState.result[0].STATE
+        document.getElementById('bank-name').innerHTML = bankState.result[0].BANK
+        document.getElementById('branch-name').innerHTML = bankState.result[0].BRANCH
     } else {
         document.getElementById('bank-name-display').innerHTML = 'NO RESULT FOUND'
     }
