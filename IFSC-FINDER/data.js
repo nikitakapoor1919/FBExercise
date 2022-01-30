@@ -135,6 +135,7 @@ function setResult() {
 function goBack() {
     document.getElementById("box1").style.display = "block";
     document.getElementById("box2").style.display = "none";
+    location.reload(true);
 }
 
 async function downloadData() {
