@@ -2,7 +2,7 @@ const state = {}
 var monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 function start() {
-    addDay(30)
+    addDay(31)
     addMonth();
     addYear();
 }
