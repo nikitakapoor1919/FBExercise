@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFSC FINDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar"></div>
+    <div class="container" id="box1">
+        <h1>IFSC CODE FINDER</h1>
+        <h3 id="bankName"></h3>
+        <table class="table">
+            <tr>
+                <td><label for="bank">Select Your Bank</label></td>
+                <td>
+                    <select id="bank">
+                        <option value="Choose Bank">Choose Bank</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State in which bank is situated</label></td>
+                <td>
+                    <select id="state">
+                        <option value="Choose State">Choose State</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="district">District in which bank is situated</label></td>
+                <td>
+                    <select id="district">
+                        <option value="Choose District">Choose District</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="branch">Branch of Bank within District</label></td>
+                <td>
+                    <select id="branch">
+                        <option value="Choose Branch">Choose Branch</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button id="next">Next</button>
+    </div>
+    <div class="container" id="box2">
+        <h2 id="bank-name-display"></h2>
+        <h3 id="state-district-display"></h3>
+        <table class="table-content">
+            <tr>
+                <td><label for="ifsc">IFSC Code</label></td>
+                <td><input type="text" id="ifsc" /></td>
+            </tr>
+            <tr>
+                <td><label for="bank-name">Bank</label></td>
+                <td><input type="text" id="bank-name" /></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" id="address" /></td>
+            </tr>
+            <tr>
+                <td><label for="district-name">District</label></td>
+                <td><input type="text" id="district-name" /></td>
+            </tr>
+            <tr>
+                <td><label for="state-name">State</label></td>
+                <td><input type="text" id="state-name" /></td>
+            </tr>
+            <tr>
+                <td><label for="branch-name">Branch</label></td>
+                <td><input type="text" id="branch-name" /></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number</label></td>
+                <td><input type="number" id="phone" /></td>
+            </tr>
+        </table>
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>
